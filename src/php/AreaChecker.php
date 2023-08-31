@@ -1,10 +1,12 @@
 <?php
 
-class AreaChecker {
-    public static function isInArea($x, $y, $r) {
+class AreaChecker
+{
+    public static function isInArea($x, $y, $r)
+    {
         // Triangle in top-right quadrant
         if ($x >= 0 && $y >= 0) {
-            return ($x <= $r / 2) && ($y <= $r) && (2*$x + $y <= $r);
+            return ($x <= $r / 2) && ($y <= $r) && (2 * $x + $y <= $r);
         }
         // Rectangle in top-left quadrant
         if ($x < 0 && $y >= 0) {
