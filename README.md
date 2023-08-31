@@ -6,6 +6,8 @@
 
 > PHP doesn't suck (anymore)?!!
 
+![Build Status](https://github.com/maxbarsukov-itmo/web-1/workflows/PHP%20Composer/badge.svg)
+
 |.pdf|.docx|
 |-|-|
 | [report](./docs/report.pdf) | [report](./docs/report.docx) |
