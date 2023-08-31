@@ -1,0 +1,8 @@
+{
+    "name": "maxbarsukov-itmo/web-1",
+    "description": "ITMO Web course: laboratory work 1",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
