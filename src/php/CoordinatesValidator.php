@@ -12,7 +12,7 @@ class CoordinatesValidator {
     }
 
     public function checkData() {
-        return checkX() && checkY() && checkR();
+        return $this->checkX() && $this->checkY() && $this->checkR();
     }
 
     private function checkX() {
