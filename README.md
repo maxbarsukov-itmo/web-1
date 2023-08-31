@@ -2,7 +2,7 @@
 
 ## Вариант `367088`
 
-<img alt="anime" src="https://github.com/maxbarsukov-itmo/web-1/blob/master/.resources/anime.gif" height="150">
+<img alt="anime" src="https://github.com/maxbarsukov-itmo/web-1/blob/master/.resources/anime.gif" height="200">
 
 > PHP doesn't suck (anymore)?!!
 
@@ -26,11 +26,11 @@
 - Отступы элементов ввода должны задаваться в **пикселях**.
 - Страница должна содержать сценарий на языке JavaScript, осуществляющий валидацию значений, вводимых пользователем в поля формы. Любые некорректные значения (например, буквы в координатах точки или отрицательный радиус) должны блокироваться.
 
-<img alt="Areas" src="https://github.com/maxbarsukov-itmo/web-1/blob/master/.resources/areas.png" height="250">
+<img alt="Areas" src="https://github.com/maxbarsukov-itmo/web-1/blob/master/.resources/areas.png" height="350">
 
 ### Вопросы к защите лабораторной работы:
 
-[*Ответы*](https://github.com/AppLoidx/Web-Development-Cheats/blob/master/itmo-university/labs/Lab1.md)
+**Ответы**: [*новые*](https://github.com/EgorMIt/ITMO/blob/master/2%20-%20%D0%92%D0%B5%D0%B1-%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/Lab1.md) и [*старые*](https://github.com/AppLoidx/Web-Development-Cheats/blob/master/itmo-university/labs/Lab1.md)
 
 1. Протокол `HTTP`. Структура запросов и ответов, методы запросов, коды ответов сервера, заголовки запросов и ответов.
 2. Язык разметки `HTML`. Особенности, основные теги и атрибуты тегов.
