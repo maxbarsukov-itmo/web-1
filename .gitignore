@@ -1,0 +1,13 @@
+# IDE files
+.idea/
+.vscode/
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Composer
+composer.phar
+/vendor/
+
+# Misc
+.DS_Store
+.wakatime-project
