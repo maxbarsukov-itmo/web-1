@@ -6,7 +6,6 @@ require __DIR__ . '/../src/php/AreaChecker.php';
 
 class AreaCheckerTest extends TestCase
 {
-
     public static function providerForAreaCheck()
     {
         return [
