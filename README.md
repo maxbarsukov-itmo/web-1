@@ -53,8 +53,24 @@
 
 #### Локально
 
-    npx http-server -p 3000 src
+`php -S localhost:3000 -t src`, чтобы запустить лабораторную на http://localhost:3000.
 
 #### Helios
 
 [Гайд](https://github.com/AppLoidx/Web-Development-Cheats/blob/master/itmo-university/deploy.md) по деплою на helios.
+
+#### Тестирование
+
+Используйте
+
+    composer install
+    vendor/bin/phpunit tests
+
+чтобы запустить тесты.
+
+## Лицензия <a name="license"></a>
+
+Проект доступен с открытым исходным кодом на условиях [Лицензии MIT](https://opensource.org/licenses/MIT).
+*Авторские права 2023 Max Barsukov*
+
+**Поставьте звезду :star:, если вы нашли этот проект полезным.**
