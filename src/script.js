@@ -37,7 +37,6 @@ document.getElementById("checkButton").onclick = function () {
 function setPointer() {
   let pointer = document.getElementById("pointer");
   pointer.style.visibility = "visible";
-  console.log(y);
   pointer.setAttribute("cx", x * 60 * 2/r + 150);
   pointer.setAttribute("cy", -y * 60 * 2/r + 150);
 }
