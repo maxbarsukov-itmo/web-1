@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "SourceSerifPro";
+  src: url("../fonts/SourceSerifPro-Regular.ttf");
+}
+
+* {
+  font-family: "SourceSerifPro", Arial, fantasy;
+  text-align: center;
+  font-weight: normal;
+}
+
+body {
+  background-color: whitesmoke
+}
+
+header {
+  font-size: 0.6em;
+  top: 0;
+}
+
+footer {
+  bottom: 0
+}
+
+header,
+footer {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  color: white;
+  background-color: #000720;
+  left: 0;
+}
+
+thead * {
+  margin-top: 4%
+}
+
+tfoot * {
+  margin-bottom: 4% !important
+}
+
+#mainTable {
+  background-color: ghostwhite;
+  width: 75%;
+  margin: 80px auto;
+}
+
+input,
+svg {
+  width: 100%;
+  border: 2px solid #f41c52;
+  border-radius: 20px;
+  background-color: white;
+}
+
+input[type=radio] {
+  float:right;
+  width: 50px;
+}
+
+input,
+a {
+  cursor: pointer;
+}
+
+svg {
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 7px 1px gray;
+  position: relative;
+  bottom: 80px;
+}
+
+figure img {
+  width: 47px;
+  height: 55px;
+}
+
+figcaption {
+  font-size: 0.8em
+}
+
+#credit {
+  padding-bottom: 20px;
+}
+
+#credit>a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.shaded {
+  box-shadow: 0 0 10px 1px black
+}
+
+.shaded:hover,
+.animated:hover {
+  transition: 0.5s
+}
+
+.shaded:hover {
+  box-shadow: 0 0 20px 2px black
+}
+
+.animated:hover {
+  transform: scale(1.05)
+}
+
+.illuminated:hover,
+.illuminated:focus {
+  box-shadow: 0 0 40px 5px #f41c52;
+  outline: none;
+}
+
+.success {
+  font-weight: bold;
+  color: #09a53d;
+}
+
+.fail {
+  font-weight: bold;
+  color: #a50909;
+}
+
+hr {
+  color: #f41c52;
+  width: 95%;
+}
+
+.notification {
+  color: white;
+  padding: 1%;
+}
+
+.outputStub {
+  background-color: #000720;
+}
+
+#outputContainer {
+  padding-bottom: 20px;
+}
+
+.errorStub {
+  background-color: #dc143b
+}
+
+#outputTable {
+  border: 1px solid #000720;
+  border-collapse: collapse;
+  margin: auto;
+  width: 90%;
+}
+
+#outputTable th {
+  background-color: #000720;
+  color: white;
+}
+
+#outputTable * {
+  padding: 25px;
+}
+
+#checkButton {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  float: right;
+  background-color: #eb2a5a;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 150px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+#checkButton:hover {
+  background: white;
+  box-shadow: 0 2px 10px 5px #eb2a5a;
+  color: black;
+}
+
+#checkButton::after {
+  content: "";
+  background: #eb2a5a;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#checkButton:active::after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+#checkButton:focus {
+  outline: 0
+}
