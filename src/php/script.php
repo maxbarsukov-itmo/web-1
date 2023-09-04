@@ -51,7 +51,7 @@ if ($validator->checkData()) {
             <th>Время работы скрипта</th>
         </tr>";
 
-    foreach ($_SESSION["results"] as $tableRow) {
+    foreach (array_reverse($_SESSION["results"]) as $tableRow) {
         echo "<tr>";
         echo "<td>" . $tableRow["x"] . "</td>";
         echo "<td>" . $tableRow["y"] . "</td>";
