@@ -17,6 +17,8 @@ window.onload = function () {
 
   let buttons = document.querySelectorAll("input[name=R-button]");
   buttons.forEach(setOnClick);
+
+  document.getElementById("outputContainer").innerHTML = localStorage.getItem("session");
 };
 
 document.getElementById("checkButton").onclick = function () {
@@ -28,17 +30,27 @@ document.getElementById("checkButton").onclick = function () {
       method: "GET",
       headers: { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" }
     }).then(response => response.text()).then(function (serverAnswer) {
-      setPointer();
+      setPointer(serverAnswer);
+      localStorage.setItem("session", serverAnswer);
       document.getElementById("outputContainer").innerHTML = serverAnswer;
     }).catch(err => createNotification("Ошибка HTTP " + err.status + ". Повторите попытку позже." + err));
   }
 };
 
-function setPointer() {
+function setPointer(serverAnswer) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(serverAnswer, "text/html");
+  const row = doc.querySelectorAll('tr')[1];
+  const cells = row.getElementsByTagName("td");
+  const last = cells[3];
+
   let pointer = document.getElementById("pointer");
+
   pointer.style.visibility = "visible";
-  pointer.setAttribute("cx", x * 60 * 2/r + 150);
-  pointer.setAttribute("cy", -y * 60 * 2/r + 150);
+  pointer.style.fill = last.innerHTML.includes("success") ? "#09a53d" : "#a50909";
+
+  pointer.setAttribute("cx", x * 60 * 2 / r + 150);
+  pointer.setAttribute("cy", -y * 60 * 2 / r + 150);
 }
 
 function createNotification(message) {
