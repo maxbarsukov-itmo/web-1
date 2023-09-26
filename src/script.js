@@ -41,6 +41,8 @@ function setPointer(serverAnswer) {
   const parser = new DOMParser();
   const doc = parser.parseFromString(serverAnswer, "text/html");
   const row = doc.querySelectorAll('tr')[1];
+  if (!row) return;
+
   const cells = row.getElementsByTagName("td");
   const last = cells[3];
 
@@ -86,7 +88,7 @@ function validateY() {
   } else if (!isNumeric(y)) {
     createNotification("Y не число");
     return false;
-  } else if (!((y > -5) && (y < 3))) {
+  } else if (!((y > -3) && (y < 5))) {
     createNotification("Y не входит в область допустимых значений");
     return false;
   } else return true;
