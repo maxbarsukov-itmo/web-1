@@ -1,5 +1,8 @@
 # Лабораторная работа 1
 
+> [!WARNING]
+> С прошлого (2024/25) года **задание лабораторной работы №1 изменилось**, и теперь этот репозиторий не актуален. В [rmntim/ITMO](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1) можно найти пример выполненной ЛР для текущего задания, а также [гайд по ЛР1](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1/guide).
+
 ## Вариант `367088`
 
 <img alt="anime" src="https://github.com/maxbarsukov-itmo/web-1/blob/master/.resources/anime.gif" height="200">
