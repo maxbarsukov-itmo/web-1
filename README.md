@@ -1,7 +1,7 @@
 # Лабораторная работа 1
 
 > [!WARNING]
-> С прошлого (2024/25) года **задание лабораторной работы №1 изменилось**, и теперь этот репозиторий не актуален. В [rmntim/ITMO](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1) можно найти пример выполненной ЛР для текущего задания, а также [гайд по ЛР1](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1/guide).
+> С прошлого (2024/25) года **задание лабораторной работы №1 изменилось**, и теперь этот репозиторий не актуален. В [rmntim/ITMO](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1) можно найти пример выполненной ЛР для текущего задания, а также [гайд по ЛР1](https://github.com/rmntim/ITMO/tree/main/Semester3/WebProgramming/Labwork1/guide) и [видео-туториал по деплою](https://www.youtube.com/watch?v=URdECcC25vY&ab_channel=frizyy).
 
 ## Вариант `367088`
 
